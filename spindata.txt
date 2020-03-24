@@ -1,0 +1,50 @@
+~/spin$ grep paths_total without_mutants/afl_fuzz_run.*/fuzzer_stats
+without_mutants/afl_fuzz_run.0/fuzzer_stats:paths_total       : 3916
+without_mutants/afl_fuzz_run.1/fuzzer_stats:paths_total       : 3867
+without_mutants/afl_fuzz_run.2/fuzzer_stats:paths_total       : 4177
+without_mutants/afl_fuzz_run.3/fuzzer_stats:paths_total       : 4276
+without_mutants/afl_fuzz_run.4/fuzzer_stats:paths_total       : 4184
+without_mutants/afl_fuzz_run.5/fuzzer_stats:paths_total       : 4159
+without_mutants/afl_fuzz_run.6/fuzzer_stats:paths_total       : 3989
+without_mutants/afl_fuzz_run.7/fuzzer_stats:paths_total       : 3705
+without_mutants/afl_fuzz_run.8/fuzzer_stats:paths_total       : 3938
+without_mutants/afl_fuzz_run.9/fuzzer_stats:paths_total       : 4093
+
+~/spin$ grep paths_total with_mutants/afl_fuzz_compiler_run.*/fuzzer_stats
+with_mutants/afl_fuzz_compiler_run.0/fuzzer_stats:paths_total       : 4211
+with_mutants/afl_fuzz_compiler_run.1/fuzzer_stats:paths_total       : 4145
+with_mutants/afl_fuzz_compiler_run.2/fuzzer_stats:paths_total       : 3921
+with_mutants/afl_fuzz_compiler_run.3/fuzzer_stats:paths_total       : 4146
+with_mutants/afl_fuzz_compiler_run.4/fuzzer_stats:paths_total       : 3985
+with_mutants/afl_fuzz_compiler_run.5/fuzzer_stats:paths_total       : 4136
+with_mutants/afl_fuzz_compiler_run.6/fuzzer_stats:paths_total       : 4263
+with_mutants/afl_fuzz_compiler_run.7/fuzzer_stats:paths_total       : 3836
+with_mutants/afl_fuzz_compiler_run.8/fuzzer_stats:paths_total       : 4149
+with_mutants/afl_fuzz_compiler_run.9/fuzzer_stats:paths_total       : 4168
+
+with.0.txt:TOTAL: 10
+with.1.txt:TOTAL: 11
+with.2.txt:TOTAL: 10
+with.3.txt:TOTAL: 13
+with.4.txt:TOTAL: 12
+with.5.txt:TOTAL: 12
+with.6.txt:TOTAL: 16
+with.7.txt:TOTAL: 10
+with.8.txt:TOTAL: 13
+with.9.txt:TOTAL: 10
+with.all.txt:TOTAL: 22
+
+without.0.txt:TOTAL: 13
+without.1.txt:TOTAL: 15
+without.2.txt:TOTAL: 15
+without.3.txt:TOTAL: 12
+without.4.txt:TOTAL: 13
+without.5.txt:TOTAL: 11
+without.6.txt:TOTAL: 14
+without.7.txt:TOTAL: 11
+without.8.txt:TOTAL: 16
+without.9.txt:TOTAL: 13
+without.all.txt:TOTAL: 23
+
+~/spin/triage$ grep TOTAL all.txt
+TOTAL: 28
